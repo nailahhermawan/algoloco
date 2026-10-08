@@ -1,0 +1,795 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_blank" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.cutting-mat-grid{background-color:#194231;background-image:linear-gradient(to right,rgba(192,237,212,0.06) 1px,transparent 1px),linear-gradient(to bottom,rgba(192,237,212,0.06) 1px,transparent 1px),linear-gradient(to right,rgba(192,237,212,0.14) 1px,transparent 1px),linear-gradient(to bottom,rgba(192,237,212,0.14) 1px,transparent 1px);background-size:10px 10px,10px 10px,50px 50px,50px 50px;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"error-container":"#ffdad6","surface-tint":"#3e6653","tertiary-fixed-dim":"#ffb4a7","surface-dim":"#dcd9d9","on-tertiary-fixed-variant":"#8a1c10","on-surface-variant":"#414944","surface-container":"#f0eded","primary-fixed":"#c0edd4","tertiary-fixed":"#ffdad4","secondary-container":"#eae2ce","surface-container-lowest":"#ffffff","primary-container":"#194231","surface-bright":"#fcf9f8","on-tertiary-container":"#ff7f6b","on-error-container":"#93000a","surface-container-low":"#f6f3f2","secondary-fixed":"#eae2ce","on-primary":"#ffffff","outline":"#717973","primary-fixed-dim":"#a4d0b9","surface-container-high":"#eae7e7","secondary-fixed-dim":"#cdc6b3","on-tertiary":"#ffffff","inverse-on-surface":"#f3f0f0","on-primary-fixed-variant":"#264e3d","on-error":"#ffffff","tertiary-container":"#780e05","error":"#ba1a1a","tertiary":"#530200","on-background":"#1b1c1c","on-secondary":"#ffffff","on-tertiary-fixed":"#400100","on-secondary-fixed":"#1f1c0f","secondary":"#635e4f","primary":"#002c1c","on-primary-fixed":"#002114","on-secondary-container":"#696454","outline-variant":"#c1c8c2","on-surface":"#1b1c1c","surface-container-highest":"#e4e2e1","inverse-primary":"#a4d0b9","on-secondary-fixed-variant":"#4b4738","on-primary-container":"#84ae98","surface":"#fcf9f8","background":"#fcf9f8","surface-variant":"#e4e2e1","inverse-surface":"#303030"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"space-lg":"1.5rem","margin-mobile":"1rem","space-xs":"0.25rem","space-md":"1rem",margin:"2rem","space-xl":"2.5rem","gutter-sm":"1rem","space-sm":"0.5rem",gutter:"1.5rem"},fontFamily:{"mono-complexity":["JetBrains Mono"],"mono-complexity-lg":["JetBrains Mono"],"headline-sm":["Plus Jakarta Sans"],"label-ticket":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],display:["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"]},fontSize:{"mono-complexity":["12px",{lineHeight:"16px",letterSpacing:"-0.02em",fontWeight:"600"}],"mono-complexity-lg":["14px",{lineHeight:"18px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"label-ticket":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"500"}],display:["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.02em",fontWeight:"700"}]}}}};</script></head><body class="min-h-screen bg-primary-container text-on-surface font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed"><div class="fixed inset-0 cutting-mat-grid pointer-events-none select-none z-0"><div class="absolute top-0 left-0 right-0 h-6 flex justify-between px-margin text-[9px] font-mono-complexity text-primary-fixed/40 items-center overflow-hidden border-b border-primary-fixed/10"><span class="">00</span><span class="">05</span><span class="">10</span><span class="">15</span><span class="">20</span><span class="">25</span><span class="">30</span><span class="">35</span><span class="">40</span><span class="">45</span><span class="">50</span><span class="">55</span><span class="">60</span><span class="">65</span><span class="">70</span><span class="">75</span><span class="">80</span><span class="">85</span><span class="">90</span><span class="">95</span><span class="">100</span></div><div class="absolute top-6 bottom-0 left-0 w-6 flex flex-col justify-between py-margin text-[9px] font-mono-complexity text-primary-fixed/40 items-center overflow-hidden border-r border-primary-fixed/10"><span class="">00</span><span class="">05</span><span class="">10</span><span class="">15</span><span class="">20</span><span class="">25</span><span class="">30</span><span class="">35</span><span class="">40</span><span class="">45</span><span class="">50</span><span class="">55</span><span class="">60</span><span class="">65</span><span class="">70</span></div></div><main class="relative z-10 min-h-screen w-full p-margin"><div class="flex flex-col w-full text-on-surface">
+<!-- TOP BRANDING SLIP (Top Left Tactile Cardstock Tag) -->
+<header class="flex items-center justify-between w-full mb-space-md">
+<div class="relative bg-surface shadow-[0_2px_5px_rgba(0,0,0,0.22)] px-4 py-2 rounded-sm rotate-[-0.5deg] flex items-center gap-3">
+<!-- Stamped algoloco Wordmark with custom train-wheel 'o' glyphs -->
+<div class="flex items-baseline font-headline-md text-headline-md tracking-tight text-on-surface font-extrabold select-none">
+<span class="">alg</span>
+<!-- Wheel 1 -->
+<span class="inline-flex items-center justify-center mx-[1.5px] translate-y-[-1px]">
+<svg class="text-on-surface" fill="none" height="18" viewBox="0 0 24 24" width="18">
+<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2.5"></circle>
+<circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"></circle>
+<circle cx="12" cy="12" fill="currentColor" r="2"></circle>
+<line stroke="currentColor" stroke-width="1.5" x1="12" x2="12" y1="2" y2="7"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="12" x2="12" y1="17" y2="22"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="2" x2="7" y1="12" y2="12"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="17" x2="22" y1="12" y2="12"></line>
+</svg>
+</span>
+<span class="">l</span>
+<!-- Wheel 2 -->
+<span class="inline-flex items-center justify-center mx-[1.5px] translate-y-[-1px]">
+<svg class="text-on-surface" fill="none" height="18" viewBox="0 0 24 24" width="18">
+<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2.5"></circle>
+<circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"></circle>
+<circle cx="12" cy="12" fill="currentColor" r="2"></circle>
+<line stroke="currentColor" stroke-width="1.5" x1="12" x2="12" y1="2" y2="7"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="12" x2="12" y1="17" y2="22"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="2" x2="7" y1="12" y2="12"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="17" x2="22" y1="12" y2="12"></line>
+</svg>
+</span>
+<span class="">c</span>
+<!-- Wheel 3 -->
+<span class="inline-flex items-center justify-center mx-[1.5px] translate-y-[-1px]">
+<svg class="text-on-surface" fill="none" height="18" viewBox="0 0 24 24" width="18">
+<circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2.5"></circle>
+<circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.8"></circle>
+<circle cx="12" cy="12" fill="currentColor" r="2"></circle>
+<line stroke="currentColor" stroke-width="1.5" x1="12" x2="12" y1="2" y2="7"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="12" x2="12" y1="17" y2="22"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="2" x2="7" y1="12" y2="12"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="17" x2="22" y1="12" y2="12"></line>
+</svg>
+</span>
+</div>
+<div class="h-4 w-[1px] bg-outline-variant/60"></div>
+<span class="font-label-ticket text-label-ticket uppercase tracking-wider text-secondary">Drafting Yard</span>
+</div>
+<!-- Small Desk Pin / Ruler Reference -->
+<div class="flex items-center gap-2 text-primary-fixed/60 font-mono-complexity text-mono-complexity select-none">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim/40 inline-block"></span>
+<span class="">MAT: 820×440mm</span>
+</div>
+</header>
+<!-- ZONE 1: LEARNING PATH (Folded cream map strip across cutting mat) -->
+<section class="relative w-full mb-space-lg">
+<!-- Map Paper Slab with subtle drop shadow & soft parchment center fold line -->
+<div class="relative w-full bg-secondary-container/90 rounded-sm shadow-[0_3px_8px_rgba(0,0,0,0.22)] overflow-hidden px-8 py-7 flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Faint Soft Cartographic Underlay: river wash + park wash -->
+<div class="absolute inset-0 pointer-events-none opacity-45 overflow-hidden">
+<!-- Park watercolor wash patch -->
+<svg class="absolute -top-10 left-12 w-96 h-48" fill="none" viewBox="0 0 300 150">
+<path d="M10 60 C 60 10, 140 20, 200 60 C 260 100, 280 140, 220 145 C 160 150, 40 130, 10 60 Z" fill="#d8e8dc"></path>
+</svg>
+<svg class="absolute -bottom-10 right-48 w-80 h-44" fill="none" viewBox="0 0 300 150">
+<path d="M30 40 C 90 20, 180 30, 250 80 C 230 130, 120 140, 50 110 Z" fill="#d8e8dc"></path>
+</svg>
+<!-- Pale blue meandering river -->
+<svg class="absolute inset-0 w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1000 120">
+<path d="M -20 70 Q 250 110, 480 50 T 1020 75" fill="none" stroke="#bcdbe8" stroke-linecap="round" stroke-width="26"></path>
+</svg>
+</div>
+<!-- Vertical Center Paper Fold Mark -->
+<div class="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[2px] pointer-events-none bg-gradient-to-r from-black/10 via-white/20 to-black/5"></div>
+<!-- Rail Track + 5 Stations Trackline -->
+<div class="relative z-10 w-full max-w-4xl flex-1 pr-4">
+<div class="relative flex items-center justify-between w-full py-4">
+<!-- Parallel Teal Track with Wood Crossties -->
+<div class="absolute left-6 right-8 top-1/2 -translate-y-1/2 h-4 flex items-center">
+<!-- Wood ties pattern -->
+<div class="absolute inset-0 flex justify-between items-center px-2 pointer-events-none">
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+<span class="w-[3px] h-3.5 bg-secondary/70"></span>
+</div>
+<!-- Two Rails in bold Teal (#2A9D8F) -->
+<div class="absolute inset-x-0 top-0.5 h-[2.5px] bg-[#2A9D8F]"></div>
+<div class="absolute inset-x-0 bottom-0.5 h-[2.5px] bg-[#2A9D8F]"></div>
+</div>
+<!-- STATION 1: Big O (Passed) -->
+<div class="relative z-20 flex flex-col items-center">
+<div class="relative w-8 h-8 rounded-full bg-surface shadow-[0_1px_3px_rgba(0,0,0,0.2)] flex items-center justify-center">
+<div class="w-3.5 h-3.5 rounded-full bg-[#2A9D8F]"></div>
+<!-- Ink Stamp: PASSED -->
+<div class="absolute -top-3 -right-3 rotate-[-12deg] pointer-events-none">
+<span class="inline-block px-1 py-0.2 bg-[#2A9D8F]/15 text-[#2A9D8F] font-mono-complexity text-[8px] font-bold tracking-tighter rounded-xs border border-[#2A9D8F]/50">PASSED</span>
+</div>
+</div>
+<span class="mt-2 font-headline-sm text-[13px] font-semibold text-on-surface whitespace-nowrap">Big O</span>
+</div>
+<!-- STATION 2: Read the screen (Passed) -->
+<div class="relative z-20 flex flex-col items-center">
+<div class="relative w-8 h-8 rounded-full bg-surface shadow-[0_1px_3px_rgba(0,0,0,0.2)] flex items-center justify-center">
+<div class="w-3.5 h-3.5 rounded-full bg-[#2A9D8F]"></div>
+<!-- Ink Stamp: PASSED -->
+<div class="absolute -top-3 -right-3 rotate-[8deg] pointer-events-none">
+<span class="inline-block px-1 py-0.2 bg-[#2A9D8F]/15 text-[#2A9D8F] font-mono-complexity text-[8px] font-bold tracking-tighter rounded-xs border border-[#2A9D8F]/50">PASSED</span>
+</div>
+</div>
+<span class="mt-2 font-headline-sm text-[13px] font-semibold text-on-surface whitespace-nowrap">Read the screen</span>
+</div>
+<!-- STATION 3: Duel (Current Station + Folded Paper Origami Train) -->
+<div class="relative z-20 flex flex-col items-center">
+<!-- Train Sitting on Station -->
+<div class="relative w-9 h-9 rounded-full bg-[#2A9D8F] shadow-[0_2px_5px_rgba(0,0,0,0.3)] flex items-center justify-center">
+<div class="w-3 h-3 rounded-full bg-surface"></div>
+<!-- Origami Folded Paper Train Locomotive -->
+<div class="absolute -top-6 left-1/2 -translate-x-1/2 rotate-[-4deg] drop-shadow-[0_3px_3px_rgba(0,0,0,0.25)]">
+<svg fill="none" height="20" viewBox="0 0 34 20" width="34">
+<!-- Folded Locomotive Cab -->
+<polygon fill="#FBF7EC" points="2,14 10,2 26,2 32,8 32,14" stroke="#2B2B2B" stroke-width="1"></polygon>
+<!-- Fold Crease Shading -->
+<polygon fill="#E8DEC4" points="10,2 26,2 20,14 10,14"></polygon>
+<!-- Cab Window Cut -->
+<rect fill="#2B2B2B" height="4" width="6" x="22" y="5"></rect>
+<!-- Chimney Pipe -->
+<polygon fill="#E8604C" points="6,4 10,4 9,8 7,8"></polygon>
+<!-- Locomotive Cowcatcher & Wheels -->
+<circle cx="8" cy="15" fill="#2B2B2B" r="3"></circle>
+<circle cx="18" cy="15" fill="#2B2B2B" r="3"></circle>
+<circle cx="28" cy="15" fill="#2B2B2B" r="3"></circle>
+</svg>
+</div>
+</div>
+<span class="mt-2 font-headline-sm text-[13px] font-bold text-on-surface whitespace-nowrap">Duel</span>
+</div>
+<!-- STATION 4: Tree Climb (Unvisited) -->
+<div class="relative z-20 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface shadow-[0_1px_3px_rgba(0,0,0,0.18)] flex items-center justify-center">
+<div class="w-4 h-4 rounded-full border-2 border-dashed border-secondary"></div>
+</div>
+<span class="mt-2 font-headline-sm text-[13px] font-medium text-secondary whitespace-nowrap">Tree Climb</span>
+</div>
+<!-- STATION 5: The Junction (Unvisited) -->
+<div class="relative z-20 flex flex-col items-center">
+<div class="w-8 h-8 rounded-full bg-surface shadow-[0_1px_3px_rgba(0,0,0,0.18)] flex items-center justify-center">
+<div class="w-4 h-4 rounded-full border-2 border-dashed border-secondary"></div>
+</div>
+<span class="mt-2 font-headline-sm text-[13px] font-medium text-secondary whitespace-nowrap">The Junction</span>
+</div>
+</div>
+</div>
+<!-- Right Strip Actions: Ticket Stub Continue Button -->
+<div class="relative z-10 flex flex-col items-end gap-2 border-l border-on-surface-variant/15 pl-6 shrink-0">
+<!-- Ticket-stub-shaped Continue Button with notches -->
+<button class="relative group bg-surface text-on-surface hover:bg-surface-bright font-headline-sm text-[15px] font-bold px-6 py-2.5 shadow-[0_2px_4px_rgba(0,0,0,0.18)] transition-transform active:translate-y-[1px] flex items-center gap-2">
+<!-- Left and right punch notch cutouts -->
+<span class="absolute -left-1.5 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="absolute -right-1.5 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="">Continue</span>
+<span class="font-mono-complexity text-mono-complexity">→</span>
+</button>
+<a class="font-body-sm text-[12px] font-medium text-secondary hover:text-on-surface underline underline-offset-2" href="#tickets-yard">
+          Skip to algorithms
+        </a>
+</div>
+</div>
+</section>
+<!-- ZONE 2: CATEGORY FILTER STICKER TABS -->
+<div class="flex flex-wrap items-center gap-3 mb-space-md select-none" id="tickets-yard">
+<!-- Sticker: All -->
+<button class="px-3.5 py-1 text-[13px] font-semibold bg-surface text-on-surface shadow-[0_1px_3px_rgba(0,0,0,0.16)] rounded-sm rotate-[-0.75deg] hover:translate-y-[-1px] transition-all">
+      All
+    </button>
+<!-- Sticker: Sorting (Active Tag in Coral #E8604C) -->
+<button class="px-3.5 py-1 text-[13px] font-bold bg-[#E8604C] text-surface shadow-[0_2px_5px_rgba(0,0,0,0.22)] rounded-sm rotate-[1.2deg] flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-surface"></span>
+<span class="">Sorting</span>
+</button>
+<!-- Sticker: Searching (Mustard #E9B44C) -->
+<button class="px-3.5 py-1 text-[13px] font-semibold bg-surface text-[#B88728] shadow-[0_1px_3px_rgba(0,0,0,0.16)] rounded-sm rotate-[-1deg] hover:translate-y-[-1px] transition-all">
+      Searching
+    </button>
+<!-- Sticker: Graph (Blue #3D5A98) -->
+<button class="px-3.5 py-1 text-[13px] font-semibold bg-surface text-[#3D5A98] shadow-[0_1px_3px_rgba(0,0,0,0.16)] rounded-sm rotate-[0.8deg] hover:translate-y-[-1px] transition-all">
+      Graph
+    </button>
+<!-- Sticker: Analysis (Teal #2A9D8F) -->
+<button class="px-3.5 py-1 text-[13px] font-semibold bg-surface text-[#2A9D8F] shadow-[0_1px_3px_rgba(0,0,0,0.16)] rounded-sm rotate-[-0.5deg] hover:translate-y-[-1px] transition-all">
+      Analysis
+    </button>
+<!-- Subtle yard counter -->
+<span class="ml-auto font-mono-complexity text-mono-complexity text-primary-fixed/50">YARD COUNT: 08</span>
+</div>
+<!-- ZONE 3: TRAIN TICKETS GRID (The Core Hero Area) -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md w-full pb-space-lg"><!-- TICKET 1: BUBBLE SORT (Normal State, Coral) -->
+<div class="relative bg-surface rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.18)] flex items-stretch h-36 overflow-hidden">
+<div class="w-2.5 bg-[#E8604C] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[17px] font-bold leading-tight text-on-surface">Bubble Sort</h3>
+<div class="w-8 h-8 flex items-end justify-center gap-1 opacity-70">
+<span class="w-1.5 h-3 bg-[#E8604C] rounded-xs"></span>
+<span class="w-1.5 h-6 bg-on-surface rounded-xs"></span>
+<span class="w-1.5 h-4 bg-outline rounded-xs"></span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">LINE • SORT</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#01</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container-lowest/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[12px] text-on-surface font-bold whitespace-nowrap">O(n²)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-semibold mt-2">→</span>
+</div>
+</div>
+<!-- TICKET 2: MERGE SORT -->
+<div class="relative bg-surface rounded-sm shadow-[0_7px_16px_rgba(0,0,0,0.3)] -translate-y-1 flex items-stretch h-36 transition-transform">
+<div class="w-2.5 bg-[#E8604C] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-mono-complexity text-[9px] text-[#E8604C] font-bold uppercase tracking-wider">ACTIVE ROUTE</span>
+<h3 class="font-headline-sm text-[17px] font-bold leading-tight text-on-surface">Merge Sort</h3>
+</div>
+<div class="w-8 h-8 flex flex-col justify-center items-center gap-0.5 opacity-85">
+<div class="w-7 h-1.5 bg-[#E8604C] rounded-xs"></div>
+<div class="flex gap-1.5 w-7">
+<span class="flex-1 h-1.5 bg-on-surface rounded-xs"></span>
+<span class="flex-1 h-1.5 bg-on-surface rounded-xs"></span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-[#E8604C] tracking-widest uppercase">DIVIDE &amp; CONQUER</span>
+<span class="w-1 h-1 rounded-full bg-[#E8604C]"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#02</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/40"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-bright shrink-0 p-2 flex flex-col items-center justify-center text-center shadow-[-2px_2px_6px_rgba(0,0,0,0.18)] rotate-[3.5deg] translate-x-1 origin-top-left border-l border-dashed border-outline-variant/60">
+<span class="font-mono-complexity text-[10px] text-on-surface font-extrabold tracking-tight whitespace-nowrap">O(n log n)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-[#E8604C] font-bold mt-2">→</span>
+</div>
+</div>
+<!-- TICKET 3: QUICK SORT -->
+<div class="relative bg-surface rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.18)] flex items-stretch h-36 overflow-hidden">
+<div class="w-2.5 bg-[#E8604C] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[17px] font-bold leading-tight text-on-surface">Quick Sort</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-70">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<rect fill="#E8604C" height="20" rx="1" width="2.5" x="11" y="2"></rect>
+<polygon fill="#2B2B2B" points="4,12 8,8 8,16"></polygon>
+<polygon fill="#2B2B2B" points="20,12 16,8 16,16"></polygon>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">PIVOT HOP</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#03</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container-lowest/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[10px] text-on-surface font-bold whitespace-nowrap">O(n log n)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-semibold mt-2">→</span>
+</div>
+</div>
+<!-- TICKET 4: BINARY SEARCH -->
+<div class="relative bg-surface rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.18)] flex items-stretch h-36 overflow-hidden">
+<div class="w-2.5 bg-[#E9B44C] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[17px] font-bold leading-tight text-on-surface">Binary Search</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-70">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<circle cx="12" cy="12" r="9" stroke="#E9B44C" stroke-width="2"></circle>
+<line stroke="#2B2B2B" stroke-width="2" x1="12" x2="12" y1="3" y2="21"></line>
+<circle cx="12" cy="12" fill="#2B2B2B" r="2.5"></circle>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">ORDERED ARRAY</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#04</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container-lowest/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[11px] text-on-surface font-bold whitespace-nowrap">O(log n)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-semibold mt-2">→</span>
+</div>
+</div>
+<!-- TICKET 5: BFS -->
+<div class="relative bg-surface rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.18)] flex items-stretch h-36 overflow-hidden">
+<div class="w-2.5 bg-[#3D5A98] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[16px] font-bold leading-tight text-on-surface">Breadth-First Search (BFS)</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-70">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<circle cx="12" cy="12" fill="#3D5A98" r="3"></circle>
+<circle cx="12" cy="12" r="7" stroke="#3D5A98" stroke-dasharray="2 2" stroke-width="1.5"></circle>
+<circle cx="12" cy="12" r="10" stroke="#2B2B2B" stroke-width="1.5"></circle>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">LEVEL RINGS</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#05</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container-lowest/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[11px] text-on-surface font-bold whitespace-nowrap">O(V + E)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-semibold mt-2">→</span>
+</div>
+</div>
+<!-- TICKET 6: DFS -->
+<div class="relative bg-surface rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.18)] flex items-stretch h-36 overflow-hidden">
+<div class="w-2.5 bg-[#3D5A98] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[16px] font-bold leading-tight text-on-surface">Depth-First Search (DFS)</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-70">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<path d="M12 2 L12 14 M12 8 L19 14 M12 14 L6 20 M12 14 L18 20" stroke="#3D5A98" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="12" cy="2" fill="#2B2B2B" r="2"></circle>
+<circle cx="6" cy="20" fill="#2B2B2B" r="2"></circle>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">TRACK BRANCH</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#06</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container-lowest/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[11px] text-on-surface font-bold whitespace-nowrap">O(V + E)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-semibold mt-2">→</span>
+</div>
+</div>
+<!-- TICKET 7: DIJKSTRA'S PATH -->
+<div class="relative bg-surface rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.18)] flex items-stretch h-36 overflow-hidden">
+<div class="w-2.5 bg-[#3D5A98] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[17px] font-bold leading-tight text-on-surface">Dijkstra's Path</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-70">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<path d="M4 18 L10 6 L20 12" stroke="#3D5A98" stroke-width="2.5"></path>
+<circle cx="4" cy="18" fill="#2B2B2B" r="3"></circle>
+<circle cx="10" cy="6" fill="#3D5A98" r="3"></circle>
+<circle cx="20" cy="12" fill="#2B2B2B" r="3"></circle>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">MIN DISTANCE</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#07</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container-lowest/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[8px] leading-tight text-on-surface font-bold whitespace-nowrap">O((V+E)log V)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-semibold mt-1">→</span>
+</div>
+</div>
+<!-- TICKET 8: A* SEARCH -->
+<div class="relative bg-surface/75 opacity-60 rounded-sm shadow-[0_1px_3px_rgba(0,0,0,0.12)] flex items-stretch h-36 overflow-hidden select-none">
+<div class="w-2.5 bg-outline shrink-0"></div>
+<div class="absolute inset-0 z-30 flex items-center justify-center pointer-events-none">
+<div class="rotate-[-18deg] px-5 py-0.5 border-2 border-tertiary text-tertiary font-mono-complexity text-mono-complexity-lg uppercase tracking-widest font-extrabold mix-blend-multiply bg-surface/40">
+          SOON
+        </div>
+</div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[17px] font-semibold leading-tight text-on-surface-variant">A* Search</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-40">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<path d="M5 19 L19 5" stroke="#2B2B2B" stroke-dasharray="3 3" stroke-width="2"></path>
+<circle cx="5" cy="19" fill="#2B2B2B" r="2.5"></circle>
+<circle cx="19" cy="5" fill="#2B2B2B" r="2.5"></circle>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-outline tracking-widest uppercase">HEURISTIC</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-mono-complexity text-[10px] text-outline">#08</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container/40 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[11px] text-outline font-medium whitespace-nowrap">O(b^d)</span>
+<span class="font-body-sm text-[11px] text-outline mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-outline font-semibold mt-2">→</span>
+</div>
+</div></div>
+<!-- SECOND ROW: 2 Additional algorithmic tickets (including 2nd SOON stamp) to complete table coverage -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md w-full"><!-- TICKET 9: GRAPH COLORING -->
+<div class="relative bg-surface rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.18)] flex items-stretch h-36 overflow-hidden">
+<div class="w-2.5 bg-[#3D5A98] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[17px] font-bold leading-tight text-on-surface">Graph Coloring</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-70">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<line stroke="#2B2B2B" stroke-width="1.5" x1="6" x2="18" y1="18" y2="18"></line>
+<line stroke="#2B2B2B" stroke-width="1.5" x1="6" x2="12" y1="18" y2="6"></line>
+<line stroke="#2B2B2B" stroke-width="1.5" x1="18" x2="12" y1="18" y2="6"></line>
+<circle cx="12" cy="6" fill="#E8604C" r="3"></circle>
+<circle cx="6" cy="18" fill="#2A9D8F" r="3"></circle>
+<circle cx="18" cy="18" fill="#E9B44C" r="3"></circle>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">CHROMATIC</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#09</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container-lowest/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[11px] text-on-surface font-bold whitespace-nowrap">O(m^V)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-semibold mt-2">→</span>
+</div>
+</div>
+<!-- TICKET 10: FLOW NETWORK -->
+<div class="relative bg-surface/75 opacity-60 rounded-sm shadow-[0_1px_3px_rgba(0,0,0,0.12)] flex items-stretch h-36 overflow-hidden select-none">
+<div class="w-2.5 bg-outline shrink-0"></div>
+<div class="absolute inset-0 z-30 flex items-center justify-center pointer-events-none">
+<div class="rotate-[14deg] px-5 py-0.5 border-2 border-secondary text-secondary font-mono-complexity text-mono-complexity-lg uppercase tracking-widest font-extrabold mix-blend-multiply bg-surface/40">
+          SOON
+        </div>
+</div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[17px] font-semibold leading-tight text-on-surface-variant">Flow Network</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-40">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<path d="M4 12 H20" stroke="#2B2B2B" stroke-width="3"></path>
+<polygon fill="#2B2B2B" points="14,8 20,12 14,16"></polygon>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-outline tracking-widest uppercase">CAPACITY</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-mono-complexity text-[10px] text-outline">#10</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container/40 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[11px] text-outline font-medium whitespace-nowrap">O(V E²)</span>
+<span class="font-body-sm text-[11px] text-outline mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-outline font-semibold mt-2">→</span>
+</div>
+</div>
+<!-- TICKET 11: MASTER THEOREM -->
+<div class="relative bg-surface rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.18)] flex items-stretch h-36 overflow-hidden">
+<div class="w-2.5 bg-[#2A9D8F] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[17px] font-bold leading-tight text-on-surface">Master Theorem</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-70">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<path d="M4 20 Q 12 18, 16 10 T 20 4" fill="none" stroke="#2A9D8F" stroke-width="2.5"></path>
+<line stroke="#2B2B2B" stroke-width="1.5" x1="4" x2="20" y1="20" y2="20"></line>
+<line stroke="#2B2B2B" stroke-width="1.5" x1="4" x2="4" y1="4" y2="20"></line>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">RECURRENCE</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#11</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container-lowest/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[9px] text-on-surface font-bold whitespace-nowrap">Θ(n^log_b a)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-semibold mt-2">→</span>
+</div>
+</div>
+<!-- TICKET 12: HEAP SORT -->
+<div class="relative bg-surface rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.18)] flex items-stretch h-36 overflow-hidden">
+<div class="w-2.5 bg-[#E8604C] shrink-0"></div>
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<h3 class="font-headline-sm text-[17px] font-bold leading-tight text-on-surface">Heap Sort</h3>
+<div class="w-8 h-8 flex items-center justify-center opacity-70">
+<svg fill="none" height="24" viewBox="0 0 24 24" width="24">
+<circle cx="12" cy="6" fill="#E8604C" r="2.5"></circle>
+<circle cx="6" cy="18" fill="#2B2B2B" r="2.5"></circle>
+<circle cx="18" cy="18" fill="#2B2B2B" r="2.5"></circle>
+<line stroke="#2B2B2B" stroke-width="1.5" x1="12" x2="6" y1="8.5" y2="15.5"></line>
+<line stroke="#2B2B2B" stroke-width="1.5" x1="12" x2="18" y1="8.5" y2="15.5"></line>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">PRIORITY YARD</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">#12</span>
+</div>
+</div>
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<div class="w-20 bg-surface-container-lowest/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[10px] text-on-surface font-bold whitespace-nowrap">O(n log n)</span>
+<span class="font-body-sm text-[11px] text-secondary mt-1">time</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-semibold mt-2">→</span>
+</div>
+</div></div><!-- ZONE 4: THREE WIDER SPECIAL TICKETS (Duel, Random, Continue) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md w-full mt-space-lg select-none">
+<!-- SPECIAL TICKET 1: DUEL -->
+<div class="relative bg-[#FAF6EC] border border-[#E9B44C]/80 rounded-sm shadow-[0_3px_8px_rgba(0,0,0,0.22)] flex items-stretch h-36 overflow-hidden">
+<!-- Left Accent Stripe (Warm Amber) -->
+<div class="w-2 bg-[#E9B44C] shrink-0"></div>
+<!-- Main Ticket Body -->
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-ticket text-[9px] text-[#B88728] tracking-widest uppercase font-bold">SPECIAL ROUTE</span>
+<h3 class="font-headline-sm text-[18px] font-bold leading-tight text-on-surface mt-0.5">Duel</h3>
+<p class="font-body-sm text-[12px] text-secondary mt-0.5">Compare two algorithms</p>
+</div>
+<!-- Origami Crossed Swords / Dual Tracks Icon -->
+<div class="w-9 h-9 flex items-center justify-center opacity-85 shrink-0">
+<svg fill="none" height="28" viewBox="0 0 28 28" width="28">
+<path d="M5 23 L23 5 M19 5 L23 5 L23 9" stroke="#E9B44C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M23 23 L5 5 M9 5 L5 5 L5 9" stroke="#2B2B2B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="14" cy="14" fill="#FAF6EC" r="3.5" stroke="#2B2B2B" stroke-width="1.5"></circle>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">HEAD-TO-HEAD</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">2× LANES</span>
+</div>
+</div>
+<!-- Perforation Line with Punch Notches -->
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<!-- Stub with VS stamp -->
+<div class="w-24 bg-[#F2EBDA] shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[12px] text-[#B88728] font-extrabold px-2 py-0.5 border border-[#B88728]/50 rounded-xs bg-surface/60">VS</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-bold mt-2">→</span>
+</div>
+</div>
+<!-- SPECIAL TICKET 2: RANDOM -->
+<div class="relative bg-[#FAF6EC] border border-[#E9B44C]/80 rounded-sm shadow-[0_3px_8px_rgba(0,0,0,0.22)] flex items-stretch h-36 overflow-hidden">
+<!-- Left Accent Stripe (Teal Accent) -->
+<div class="w-2 bg-[#2A9D8F] shrink-0"></div>
+<!-- Main Ticket Body -->
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-ticket text-[9px] text-[#2A9D8F] tracking-widest uppercase font-bold">DISPATCH</span>
+<h3 class="font-headline-sm text-[18px] font-bold leading-tight text-on-surface mt-0.5">Random</h3>
+<p class="font-body-sm text-[12px] text-secondary mt-0.5">Surprise me</p>
+</div>
+<!-- Flat Papercraft Dice Icon -->
+<div class="w-9 h-9 flex items-center justify-center opacity-85 shrink-0">
+<svg fill="none" height="26" viewBox="0 0 26 26" width="26">
+<rect fill="#FAF6EC" height="20" rx="2" stroke="#2B2B2B" stroke-width="2" width="20" x="3" y="3"></rect>
+<circle cx="8" cy="8" fill="#2A9D8F" r="1.8"></circle>
+<circle cx="18" cy="8" fill="#2B2B2B" r="1.8"></circle>
+<circle cx="13" cy="13" fill="#E8604C" r="1.8"></circle>
+<circle cx="8" cy="18" fill="#2B2B2B" r="1.8"></circle>
+<circle cx="18" cy="18" fill="#2A9D8F" r="1.8"></circle>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">SHUFFLE</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">ROLL</span>
+</div>
+</div>
+<!-- Perforation Line with Punch Notches -->
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<!-- Action Stub -->
+<div class="w-24 bg-[#F2EBDA] shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[11px] text-secondary font-bold uppercase tracking-wider">ANY</span>
+<span class="font-mono-complexity text-[13px] text-on-surface font-bold mt-2">→</span>
+</div>
+</div>
+<!-- SPECIAL TICKET 3: CONTINUE -->
+<div class="relative bg-[#FAF6EC] border border-[#E9B44C]/80 rounded-sm shadow-[0_3px_8px_rgba(0,0,0,0.22)] flex items-stretch h-36 overflow-hidden">
+<!-- Left Accent Stripe (Coral Accent) -->
+<div class="w-2 bg-[#E8604C] shrink-0"></div>
+<!-- Main Ticket Body -->
+<div class="relative flex-1 p-3.5 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-ticket text-[9px] text-[#E8604C] tracking-widest uppercase font-bold">LAST SAVED</span>
+<h3 class="font-headline-sm text-[18px] font-bold leading-tight text-on-surface mt-0.5">Continue</h3>
+<p class="font-body-sm text-[12px] text-secondary mt-0.5">Resume: Merge Sort #02</p>
+</div>
+<!-- Resume Forward Arrow Badge -->
+<div class="w-9 h-9 flex items-center justify-center opacity-85 shrink-0">
+<svg fill="none" height="26" viewBox="0 0 26 26" width="26">
+<circle cx="13" cy="13" fill="#E8604C" r="10"></circle>
+<polygon fill="#FAF6EC" points="11,9 18,13 11,17"></polygon>
+</svg>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-ticket text-[10px] text-secondary tracking-widest uppercase">IN PROGRESS</span>
+<span class="w-1 h-1 rounded-full bg-secondary"></span>
+<span class="font-mono-complexity text-[10px] text-secondary">STEP 4/12</span>
+</div>
+</div>
+<!-- Perforation Line with Punch Notches -->
+<div class="relative flex flex-col items-center justify-between w-0 shrink-0">
+<span class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+<span class="h-full border-r border-dashed border-on-surface-variant/30"></span>
+<span class="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-primary-container z-20"></span>
+</div>
+<!-- Action Stub -->
+<div class="w-24 bg-[#F2EBDA] shrink-0 p-2 flex flex-col items-center justify-center text-center">
+<span class="font-mono-complexity text-[11px] text-[#E8604C] font-bold uppercase tracking-wider">RESUME</span>
+<span class="font-mono-complexity text-[13px] text-[#E8604C] font-bold mt-2">→</span>
+</div>
+</div>
+</div>
+<!-- ZONE 5: RAILWAY FOOTER AT BOTTOM -->
+<footer class="relative w-full pt-space-xl pb-space-lg select-none">
+<!-- Subtle Horizontal Rail Track -->
+<div class="relative w-full h-8 flex items-center">
+<!-- Wood crossties across the footer track -->
+<div class="absolute inset-0 flex justify-between items-center px-4 pointer-events-none opacity-40">
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+<span class="w-[2px] h-3 bg-secondary"></span>
+</div>
+<!-- Two thin parallel rails -->
+<div class="absolute inset-x-0 top-2 h-[1px] bg-primary-fixed/40"></div>
+<div class="absolute inset-x-0 bottom-2 h-[1px] bg-primary-fixed/40"></div>
+<!-- Folded-Paper Origami Train Idling on Left -->
+<div class="absolute left-12 -top-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] z-10 flex items-center gap-3">
+<svg fill="none" height="20" viewBox="0 0 34 20" width="34">
+<polygon fill="#FBF7EC" points="2,14 10,2 26,2 32,8 32,14" stroke="#2B2B2B" stroke-width="1"></polygon>
+<polygon fill="#E8DEC4" points="10,2 26,2 20,14 10,14"></polygon>
+<rect fill="#2B2B2B" height="4" width="6" x="22" y="5"></rect>
+<polygon fill="#717973" points="6,4 10,4 9,8 7,8"></polygon>
+<circle cx="8" cy="15" fill="#2B2B2B" r="2.5"></circle>
+<circle cx="18" cy="15" fill="#2B2B2B" r="2.5"></circle>
+<circle cx="28" cy="15" fill="#2B2B2B" r="2.5"></circle>
+</svg>
+<span class="font-mono-complexity text-[10px] text-primary-fixed/50 uppercase tracking-widest hidden sm:inline-block">YARD SHUNTER NO. 04</span>
+</div>
+<!-- Platform Station Enamel Nameplate Sign on Right -->
+<div class="absolute right-8 -top-1.5 z-10">
+<div class="bg-surface text-on-surface px-3 py-1 rounded-sm shadow-[0_2px_5px_rgba(0,0,0,0.25)] border border-outline-variant/60 flex items-center gap-2 rotate-[0.8deg]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#2A9D8F]"></span>
+<svg class="text-on-surface" fill="currentColor" height="13" viewBox="0 0 24 24" width="13">
+<path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path>
+</svg>
+<span class="font-mono-complexity text-[11px] font-semibold text-on-surface tracking-tight">@nailahhermawan</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Interactive script for filter sticker click state (No external deps) -->
+<script>
+    document.querySelectorAll('#tickets-yard button').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('#tickets-yard button').forEach(btn => {
+          btn.classList.remove('bg-[#E8604C]', 'text-surface', 'font-bold');
+          btn.classList.add('bg-surface', 'font-semibold');
+        });
+        button.classList.add('bg-[#E8604C]', 'text-surface', 'font-bold');
+        button.classList.remove('bg-surface');
+      });
+    });
+  </script>
+</div></main>
+
+</body></html>
