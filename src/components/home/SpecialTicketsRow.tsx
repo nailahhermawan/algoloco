@@ -55,8 +55,8 @@ export const SpecialTicketsRow: React.FC = () => {
           <Notches />
           <span className="h-full border-r border-dashed border-ink/15" />
         </div>
-        <div className="w-24 bg-paper-map/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
-          <span className="font-mono text-[12px] text-rail-mustard font-extrabold px-2 py-0.5 border border-rail-mustard/50 rounded-sm bg-paper-ticket/60">
+        <div className="w-24 bg-paper-map-light shrink-0 p-2 flex flex-col items-center justify-center text-center">
+          <span className="font-mono text-[12px] text-rail-mustard font-extrabold px-2 py-0.5 border border-rail-mustard/50 rounded-sm bg-paper-ticket">
             {t('special.duelBadge')}
           </span>
           <span className="font-mono text-[13px] text-ink font-bold mt-2" aria-hidden="true">→</span>
@@ -97,7 +97,7 @@ export const SpecialTicketsRow: React.FC = () => {
           <Notches />
           <span className="h-full border-r border-dashed border-ink/15" />
         </div>
-        <div className="w-24 bg-paper-map/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+        <div className="w-24 bg-paper-map-light shrink-0 p-2 flex flex-col items-center justify-center text-center">
           <span className="font-mono text-[11px] text-ink/50 font-bold uppercase tracking-wider">
             {t('special.randomBadge')}
           </span>
@@ -143,7 +143,7 @@ export const SpecialTicketsRow: React.FC = () => {
             <Notches />
             <span className="h-full border-r border-dashed border-ink/15" />
           </div>
-          <div className="w-24 bg-paper-map/60 shrink-0 p-2 flex flex-col items-center justify-center text-center">
+          <div className="w-24 bg-paper-map-light shrink-0 p-2 flex flex-col items-center justify-center text-center">
             <span className="font-mono text-[11px] text-rail-coral font-bold uppercase tracking-wider">
               {t('special.continueBadge')}
             </span>

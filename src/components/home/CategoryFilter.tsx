@@ -62,7 +62,7 @@ export const CategoryFilter: React.FC<CategoryFilterProps> = ({ active, onFilter
       })}
 
       {/* Yard counter */}
-      <span className="ml-auto text-[12px] font-mono text-paper-map/50" aria-live="polite">
+      <span className="ml-auto text-[11px] font-mono font-bold tracking-wider text-[#c0edd4]/80" aria-live="polite">
         {t('filters.yardCount', { count: String(count).padStart(2, '0') })}
       </span>
     </div>

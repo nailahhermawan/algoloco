@@ -5,13 +5,13 @@ export default {
     extend: {
       colors: {
         paper: {
-          map: 'var(--color-paper-map)',
-          'map-light': 'var(--color-paper-map-light)',
-          ticket: 'var(--color-paper-ticket)',
+          map: 'rgb(var(--color-paper-map-rgb) / <alpha-value>)',
+          'map-light': 'rgb(var(--color-paper-map-light-rgb) / <alpha-value>)',
+          ticket: 'rgb(var(--color-paper-ticket-rgb) / <alpha-value>)',
         },
-        ink: 'var(--color-ink)',
+        ink: 'rgb(var(--color-ink-rgb) / <alpha-value>)',
         mat: {
-          DEFAULT: 'var(--color-cutting-mat)',
+          DEFAULT: 'rgb(var(--color-cutting-mat-rgb) / <alpha-value>)',
           grid: 'var(--color-cutting-mat-grid)',
         },
         rail: {

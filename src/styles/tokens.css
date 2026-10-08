@@ -1,12 +1,17 @@
 :root {
   /* Paper & Ink */
   --color-paper-map: #eae2ce;
+  --color-paper-map-rgb: 234 226 206;
   --color-paper-map-light: #f6f0e4;
+  --color-paper-map-light-rgb: 246 240 228;
   --color-paper-ticket: #fbf7ec;
+  --color-paper-ticket-rgb: 251 247 236;
   --color-ink: #2b2b2b;
+  --color-ink-rgb: 43 43 43;
 
   /* Cutting Mat */
   --color-cutting-mat: #194231;
+  --color-cutting-mat-rgb: 25 66 49;
   --color-cutting-mat-grid: rgba(192, 237, 212, 0.14);
 
   /* Railway Line / State Colors */

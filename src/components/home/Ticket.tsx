@@ -99,7 +99,7 @@ export const Ticket: React.FC<TicketProps> = ({ entry }) => {
       </div>
 
       {/* Stub */}
-      <div className="w-20 bg-paper-map-light/60 shrink-0 p-2 flex flex-col items-center justify-center text-center group-hover:rotate-[3.5deg] group-hover:translate-x-0.5 motion-reduce:group-hover:rotate-0 motion-reduce:group-hover:translate-x-0 transition-transform origin-top-left">
+      <div className="w-20 bg-paper-map-light shrink-0 p-2 flex flex-col items-center justify-center text-center group-hover:rotate-[3.5deg] group-hover:translate-x-0.5 motion-reduce:group-hover:rotate-0 motion-reduce:group-hover:translate-x-0 transition-transform origin-top-left">
         <span className="font-mono text-[11px] text-ink font-bold whitespace-nowrap leading-tight">
           {entry.complexityValue}
         </span>
@@ -120,7 +120,7 @@ export const SoonTicket: React.FC<TicketProps> = ({ entry }) => {
 
   return (
     <div
-      className="relative bg-paper-ticket/75 opacity-60 rounded-sm shadow-paper flex items-stretch h-36 overflow-hidden select-none"
+      className="relative bg-paper-ticket opacity-75 rounded-sm shadow-paper flex items-stretch h-36 overflow-hidden select-none"
       aria-label={`${t(entry.nameKey)} — ${t('stamps.soon')}`}
     >
       {/* Muted strip */}
@@ -128,7 +128,7 @@ export const SoonTicket: React.FC<TicketProps> = ({ entry }) => {
 
       {/* SOON stamp overlay */}
       <div className="absolute inset-0 z-30 flex items-center justify-center pointer-events-none" aria-hidden="true">
-        <div className="rotate-[-18deg] motion-reduce:rotate-0 px-5 py-0.5 border-2 border-rail-coral/60 text-rail-coral/70 font-mono text-sm uppercase tracking-widest font-extrabold bg-paper-ticket/40">
+        <div className="rotate-[-18deg] motion-reduce:rotate-0 px-4 py-1 border-2 border-rail-coral text-rail-coral font-mono text-xs uppercase tracking-widest font-extrabold bg-paper-ticket shadow-paper">
           {t('stamps.soon')}
         </div>
       </div>
@@ -136,7 +136,7 @@ export const SoonTicket: React.FC<TicketProps> = ({ entry }) => {
       {/* Body (muted) */}
       <div className="relative flex-1 p-3.5 flex flex-col justify-between min-w-0">
         <div className="flex items-start justify-between gap-2">
-          <h3 className="text-[17px] font-semibold leading-tight text-ink/50">{t(entry.nameKey)}</h3>
+          <h3 className="text-[17px] font-semibold leading-tight text-ink/70">{t(entry.nameKey)}</h3>
           {Icon && (
             <div className="w-8 h-8 flex items-center justify-center opacity-40 shrink-0" aria-hidden="true">
               <Icon />
@@ -144,11 +144,11 @@ export const SoonTicket: React.FC<TicketProps> = ({ entry }) => {
           )}
         </div>
         <div className="flex items-center gap-2">
-          <span className="text-[10px] font-bold tracking-widest uppercase text-ink/30">
+          <span className="text-[10px] font-bold tracking-widest uppercase text-ink/40">
             {t(entry.subtitleKey)}
           </span>
           <span className="w-1 h-1 rounded-full bg-ink/20" aria-hidden="true" />
-          <span className="text-[10px] font-mono text-ink/30">
+          <span className="text-[10px] font-mono text-ink/40">
             #{String(entry.ticketNumber).padStart(2, '0')}
           </span>
         </div>
@@ -161,12 +161,12 @@ export const SoonTicket: React.FC<TicketProps> = ({ entry }) => {
       </div>
 
       {/* Stub (muted) */}
-      <div className="w-20 bg-paper-map-light/40 shrink-0 p-2 flex flex-col items-center justify-center text-center">
-        <span className="font-mono text-[11px] text-ink/40 font-medium whitespace-nowrap">
+      <div className="w-20 bg-paper-map-light shrink-0 p-2 flex flex-col items-center justify-center text-center">
+        <span className="font-mono text-[11px] text-ink/50 font-medium whitespace-nowrap">
           {entry.complexityValue}
         </span>
-        <span className="text-[11px] text-ink/30 mt-1">{entry.complexityKind}</span>
-        <span className="font-mono text-[13px] text-ink/30 font-semibold mt-2" aria-hidden="true">
+        <span className="text-[11px] text-ink/40 mt-1">{entry.complexityKind}</span>
+        <span className="font-mono text-[13px] text-ink/40 font-semibold mt-2" aria-hidden="true">
           →
         </span>
       </div>
