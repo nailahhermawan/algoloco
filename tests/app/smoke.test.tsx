@@ -5,14 +5,15 @@ import App from '@/app/App';
 import { t } from '@/i18n';
 
 describe('App smoke test & router resolution', () => {
-  it('renders Home route placeholder at /', async () => {
+  it('renders Home route at /', async () => {
     render(
       <MemoryRouter initialEntries={['/']}>
         <App />
       </MemoryRouter>,
     );
 
-    expect(await screen.findByText(t('pages.home.title'))).toBeInTheDocument();
+    // Home page shows the Drafting Yard header
+    expect(await screen.findByText(t('app.draftingYard'))).toBeInTheDocument();
   });
 
   it('renders LessonIndex route placeholder at /learn', async () => {
