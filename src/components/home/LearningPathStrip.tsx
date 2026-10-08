@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { t } from '@/i18n';
 
 interface LessonStation {
@@ -133,9 +134,9 @@ export const LearningPathStrip: React.FC = () => {
 
         {/* Right side: Continue button + Skip link */}
         <div className="relative z-10 flex flex-col items-end gap-2 border-l border-ink/10 pl-6 shrink-0">
-          <button
+          <Link
+            to="/learn"
             className="relative bg-paper-ticket text-ink font-bold text-[15px] px-6 py-2.5 shadow-paper hover:shadow-paper-lifted transition-shadow flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-rail-teal focus-visible:ring-offset-1 rounded-sm"
-            type="button"
           >
             {/* Punch notches */}
             <span
@@ -150,7 +151,7 @@ export const LearningPathStrip: React.FC = () => {
             <span className="font-mono text-xs" aria-hidden="true">
               →
             </span>
-          </button>
+          </Link>
           <a
             href="#tickets-yard"
             className="text-[12px] font-medium text-ink/50 hover:text-ink underline underline-offset-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-rail-teal rounded"

@@ -110,7 +110,7 @@ export const en: TranslationDictionary = {
     lessons: 'Lessons',
   },
   footer: {
-    shunter: 'YARD SHUNTER',
+    shunter: 'YARD SHUNTER NO. 04',
   },
   engine: {
     errors: {

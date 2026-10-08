@@ -110,7 +110,7 @@ export const id: TranslationDictionary = {
     lessons: 'Pelajaran',
   },
   footer: {
-    shunter: 'YARD SHUNTER',
+    shunter: 'YARD SHUNTER NO. 04',
   },
   engine: {
     errors: {
