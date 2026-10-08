@@ -9,4 +9,4 @@ export const APP_NAME = 'Algoloco';
  * Note: Default language is still marked [Open] in BLUEPRINT.md.
  * Temporarily set to 'id' (Indonesian) as per setup guidelines.
  */
-export const DEFAULT_LANGUAGE: 'id' | 'en' = 'id';
+export const DEFAULT_LANGUAGE: 'id' | 'en' = 'en';

@@ -8,8 +8,8 @@ export const en: TranslationDictionary = {
   },
   nav: {
     home: 'Home',
-    lessons: 'Lokal (Lessons)',
-    algorithms: 'Ekspres (Algorithms)',
+    lessons: 'Lessons',
+    algorithms: 'Algorithms',
     skipToAlgorithms: 'Skip to algorithms',
     backToYard: '← Yard',
   },

@@ -7,21 +7,21 @@ describe('i18n helper', () => {
     setLocale(DEFAULT_LANGUAGE);
   });
 
-  it('translates nested keys in default locale (id)', () => {
-    expect(t('pages.home.title')).toBe('Meja Kerja Algoritma');
-    expect(t('pages.notFound.title')).toBe('Stasiun Tidak Ditemukan');
+  it('translates nested keys in default locale (en)', () => {
+    expect(t('pages.home.title')).toBe('Algorithm Desk');
+    expect(t('pages.notFound.title')).toBe('Station Not Found');
   });
 
   it('interpolates parameters correctly', () => {
-    expect(t('pages.lesson.title', { id: 'big-o' })).toBe('Pelajaran: big-o');
-    expect(t('pages.algorithm.title', { id: 'bfs' })).toBe('Algoritma: bfs');
+    expect(t('pages.lesson.title', { id: 'big-o' })).toBe('Lesson: big-o');
+    expect(t('pages.algorithm.title', { id: 'bfs' })).toBe('Algorithm: bfs');
   });
 
   it('switches locales and translates accordingly', () => {
-    setLocale('en');
-    expect(getLocale()).toBe('en');
-    expect(t('pages.home.title')).toBe('Algorithm Desk');
-    expect(t('pages.lesson.title', { id: 'big-o' })).toBe('Lesson: big-o');
+    setLocale('id');
+    expect(getLocale()).toBe('id');
+    expect(t('pages.home.title')).toBe('Meja Kerja Algoritma');
+    expect(t('pages.lesson.title', { id: 'big-o' })).toBe('Pelajaran: big-o');
   });
 
   it('falls back to key if translation is missing', () => {
