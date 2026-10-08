@@ -1,11 +1,7 @@
-# AI Assistant Instructions
-
-Welcome to the **Algoloco** project.
-
-Before writing any code, planning architectures, or modifying designs, you must read [`docs/BLUEPRINT.md`](docs/BLUEPRINT.md) thoroughly.
-
-Please pay particular attention to:
-
-- **Section 12 (Working agreement for AI assistants)**: Applies to all work on this repository.
-- Items marked **[Decided]** must not be altered unless explicitly agreed with the project author.
-- Do not duplicate the contents of the blueprint elsewhere; maintain `docs/BLUEPRINT.md` as the single source of truth.
+# Algoloco — quick rules
+- React + Vite + TypeScript + Tailwind. No backend.
+- UI source of truth: docs/design/*.html (exported from Stitch). Copy markup and styles as-is; only convert to JSX and split into components. Do NOT redesign or "improve" the look.
+- Do not read docs/BLUEPRINT*.md unless the task explicitly says so. For small tasks, do not write a plan; edit directly.
+- Algorithms are pure functions in src/engine returning Step[] (see src/engine/types.ts).
+- Touch only the files named in the task. Keep changes small.
+- User-facing strings go through src/i18n.
