@@ -8,6 +8,7 @@ export interface TranslationDictionary {
     lessons: string;
     algorithms: string;
     skipToAlgorithms: string;
+    backToYard: string;
   };
   pages: {
     home: {
@@ -31,6 +32,32 @@ export interface TranslationDictionary {
       message: string;
       backHome: string;
     };
+    underConstruction: {
+      stamp: string;
+      subtitle: string;
+      message: string;
+      backButton: string;
+      platform: string;
+      ticketLabel: string;
+    };
+  };
+  algorithms: {
+    bubbleSort: string;
+    mergeSort: string;
+    quickSort: string;
+    insertionSort: string;
+    selectionSort: string;
+    bfs: string;
+    dfs: string;
+    dijkstra: string;
+    aStar: string;
+    graphColoring: string;
+  };
+  special: {
+    duel: string;
+    random: string;
+    continue: string;
+    lessons: string;
   };
   engine: {
     errors: {

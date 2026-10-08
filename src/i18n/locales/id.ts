@@ -10,6 +10,7 @@ export const id: TranslationDictionary = {
     lessons: 'Lokal (Pelajaran)',
     algorithms: 'Ekspres (Algoritma)',
     skipToAlgorithms: 'Lewati ke algoritma',
+    backToYard: '← Halaman Utama',
   },
   pages: {
     home: {
@@ -33,6 +34,32 @@ export const id: TranslationDictionary = {
       message: 'Jalur kereta tidak mengarah ke rute ini (404).',
       backHome: 'Kembali ke Beranda',
     },
+    underConstruction: {
+      stamp: 'SEGERA',
+      subtitle: 'DIV. INSPEKSI TERTUNDA',
+      message: 'Jalur ini masih dalam pembangunan.',
+      backButton: 'Kembali ke halaman utama',
+      platform: 'PLATFORM · {number}',
+      ticketLabel: 'TIKET #{number} · {category}',
+    },
+  },
+  algorithms: {
+    bubbleSort: 'Bubble Sort',
+    mergeSort: 'Merge Sort',
+    quickSort: 'Quick Sort',
+    insertionSort: 'Insertion Sort',
+    selectionSort: 'Selection Sort',
+    bfs: 'Breadth-First Search (BFS)',
+    dfs: 'Depth-First Search (DFS)',
+    dijkstra: 'Jalur Dijkstra',
+    aStar: 'A* Search',
+    graphColoring: 'Pewarnaan Graf',
+  },
+  special: {
+    duel: 'Duel',
+    random: 'Acak',
+    continue: 'Lanjutkan',
+    lessons: 'Pelajaran',
   },
   engine: {
     errors: {
