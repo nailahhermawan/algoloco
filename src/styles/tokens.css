@@ -1,0 +1,17 @@
+:root {
+  /* Paper & Ink */
+  --color-paper-map: #f4ecd8;
+  --color-paper-map-light: #f6f0e4;
+  --color-paper-ticket: #fbf7ec;
+  --color-ink: #2b2b2b;
+
+  /* Cutting Mat */
+  --color-cutting-mat: #2e6b55;
+  --color-cutting-mat-grid: rgba(255, 255, 255, 0.15);
+
+  /* Railway Line / State Colors */
+  --color-rail-coral: #e8604c; /* Current / primary accent */
+  --color-rail-mustard: #e9b44c; /* Frontier / in queue / highlight */
+  --color-rail-teal: #2a9d8f; /* Visited */
+  --color-rail-blue: #3d5a98; /* Secondary line */
+}

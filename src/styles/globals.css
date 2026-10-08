@@ -1,0 +1,15 @@
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: var(--color-cutting-mat);
+    color: var(--color-ink);
+    font-family: 'DM Sans', Nunito, system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+}
