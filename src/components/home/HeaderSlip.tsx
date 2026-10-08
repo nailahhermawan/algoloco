@@ -43,6 +43,10 @@ export const HeaderSlip: React.FC = () => {
           {t('app.draftingYard')}
         </span>
       </div>
+      <div className="flex items-center gap-2 text-[#c0edd4]/60 font-mono text-[11px] select-none" aria-hidden="true">
+        <span className="w-2 h-2 rounded-full bg-[#c0edd4]/40 inline-block" />
+        <span>MAT: 820×440mm</span>
+      </div>
     </header>
   );
 };

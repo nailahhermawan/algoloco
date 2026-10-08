@@ -6,8 +6,8 @@
   --color-ink: #2b2b2b;
 
   /* Cutting Mat */
-  --color-cutting-mat: #2e6b55;
-  --color-cutting-mat-grid: rgba(255, 255, 255, 0.15);
+  --color-cutting-mat: #194231;
+  --color-cutting-mat-grid: rgba(192, 237, 212, 0.14);
 
   /* Railway Line / State Colors */
   --color-rail-coral: #e8604c; /* Current / primary accent */

@@ -66,23 +66,24 @@ const LEFT_RULER_MARKS: readonly string[] = [
 export const CuttingMat: React.FC<CuttingMatProps> = ({ children, className = '' }) => {
   return (
     <div className={`relative min-h-screen w-full bg-mat overflow-hidden ${className}`.trim()}>
-      {/* Decorative background overlay: fine grid + rulers */}
+      {/* Decorative background overlay: fine grid + rulers across full screen */}
       <div
-        className="pointer-events-none absolute inset-0 select-none overflow-hidden"
+        className="pointer-events-none fixed inset-0 select-none overflow-hidden z-0"
         aria-hidden="true"
         style={{
+          backgroundColor: '#194231',
           backgroundImage: `
-            linear-gradient(to right, color-mix(in srgb, var(--color-cutting-mat-grid) 40%, transparent) 1px, transparent 1px),
-            linear-gradient(to bottom, color-mix(in srgb, var(--color-cutting-mat-grid) 40%, transparent) 1px, transparent 1px),
-            linear-gradient(to right, var(--color-cutting-mat-grid) 1px, transparent 1px),
-            linear-gradient(to bottom, var(--color-cutting-mat-grid) 1px, transparent 1px)
+            linear-gradient(to right, rgba(192, 237, 212, 0.06) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(192, 237, 212, 0.06) 1px, transparent 1px),
+            linear-gradient(to right, rgba(192, 237, 212, 0.14) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(192, 237, 212, 0.14) 1px, transparent 1px)
           `,
           backgroundSize: '10px 10px, 10px 10px, 50px 50px, 50px 50px',
         }}
       >
         {/* Top ruler bar */}
         <div
-          className="absolute top-0 left-0 right-0 h-6 flex items-center justify-between border-b border-paper-map/10 px-6 sm:px-8 font-mono text-[9px] text-paper-map/30 pointer-events-none overflow-hidden select-none"
+          className="absolute top-0 left-0 right-0 h-6 flex items-center justify-between border-b border-[#c0edd4]/15 px-6 sm:px-8 font-mono text-[9px] text-[#c0edd4]/50 pointer-events-none overflow-hidden select-none"
           aria-hidden="true"
         >
           {TOP_RULER_MARKS.map((mark) => (
@@ -94,7 +95,7 @@ export const CuttingMat: React.FC<CuttingMatProps> = ({ children, className = ''
 
         {/* Left ruler bar */}
         <div
-          className="absolute top-6 bottom-0 left-0 w-6 flex flex-col items-center justify-between border-r border-paper-map/10 py-6 sm:py-8 font-mono text-[9px] text-paper-map/30 pointer-events-none overflow-hidden select-none"
+          className="absolute top-6 bottom-0 left-0 w-6 flex flex-col items-center justify-between border-r border-[#c0edd4]/15 py-6 sm:py-8 font-mono text-[9px] text-[#c0edd4]/50 pointer-events-none overflow-hidden select-none"
           aria-hidden="true"
         >
           {LEFT_RULER_MARKS.map((mark) => (

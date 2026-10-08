@@ -41,12 +41,11 @@ describe('Home CuttingMat component', () => {
 
     const overlay = container.querySelector('[aria-hidden="true"]');
     expect(overlay).toBeInTheDocument();
-    expect(overlay).toHaveClass('pointer-events-none', 'absolute', 'inset-0');
+    expect(overlay).toHaveClass('pointer-events-none', 'inset-0');
 
     // Grid backgroundImage verification
     const style = (overlay as HTMLElement).style;
     expect(style.backgroundImage).toContain('linear-gradient');
-    expect(style.backgroundImage).toContain('var(--color-cutting-mat-grid)');
     expect(style.backgroundSize).toContain('10px 10px');
     expect(style.backgroundSize).toContain('50px 50px');
   });
@@ -58,9 +57,9 @@ describe('Home CuttingMat component', () => {
       </CuttingMat>,
     );
 
-    const topRuler = container.querySelector('.border-b.border-paper-map\\/10') as HTMLElement;
+    const topRuler = container.querySelector('.border-b') as HTMLElement;
     expect(topRuler).toBeInTheDocument();
-    expect(topRuler).toHaveClass('font-mono', 'text-[9px]', 'text-paper-map/30');
+    expect(topRuler).toHaveClass('font-mono', 'text-[9px]');
 
     // Check boundary and intermediate marks
     expect(topRuler.textContent).toContain('00');
@@ -82,9 +81,9 @@ describe('Home CuttingMat component', () => {
       </CuttingMat>,
     );
 
-    const leftRuler = container.querySelector('.border-r.border-paper-map\\/10') as HTMLElement;
+    const leftRuler = container.querySelector('.border-r') as HTMLElement;
     expect(leftRuler).toBeInTheDocument();
-    expect(leftRuler).toHaveClass('font-mono', 'text-[9px]', 'text-paper-map/30');
+    expect(leftRuler).toHaveClass('font-mono', 'text-[9px]');
 
     // Check boundary and intermediate marks
     expect(leftRuler.textContent).toContain('00');

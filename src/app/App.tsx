@@ -6,7 +6,7 @@ export const App: React.FC = () => {
   const element = useRoutes(routes);
 
   return (
-    <div className="min-h-screen bg-mat p-4 sm:p-6 lg:p-8 flex flex-col justify-start items-stretch">
+    <div className="min-h-screen bg-mat flex flex-col justify-start items-stretch">
       <Suspense
         fallback={
           <div className="flex items-center justify-center p-12 text-paper-map">
