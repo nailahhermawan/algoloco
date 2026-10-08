@@ -503,6 +503,9 @@ This table is the working plan, not a promise: public-facing descriptions must n
 | M4 Sorting                  | Wagon track, array input, bubble / insertion / selection             |
 | M5 More sorting + scenes    | Merge, quick, scenery layers                                         |
 | M6 Home map                 | Network map, destination ticket navigation, Lokal/Ekspres entry      |
+
+> **Note:** The Home page (M6) was built early to validate the ticket-based dashboard design and establish shared components (CuttingMat, RailFooter, CategoryFilter, ticket anatomy). The learning path strip is rendered but non-functional until lessons are implemented.
+
 | M7 Lessons                  | Big O race, "how to read this screen" tour, duel; progress stamps    |
 | M8 Comparison + polish      | Complexity comparison, a11y pass, README with GIFs, final deploy     |
 | Later                       | Graph coloring, Dijkstra, MST, A*, share-by-URL, more lessons        |
@@ -537,11 +540,13 @@ Build one module completely (including deploy) before starting the next.
 - Mobile layout details (proposed: stage on top, ticket and tray as tabs).
 - Form of the switcher opened by the destination ticket (mini map vs ticket list).
 - Whether non-algorithm topics (for example Master Theorem) get a ticket or live only in lessons.
+- **Master Theorem (#11)**: included in the Home page catalog as category "analysis", status "ready". Needs a decision on whether it stays as a ticket or moves to lessons only.
 
 ### Changelog
 
 - 0.1 (2026-10-08): initial blueprint.
 - 0.2 (2026-10-08): home page redefined as a ticket-based dashboard; map reserved for the learning path.
+- 0.3 (2026-10-08): Home page (M6) built early. Added `@testing-library/user-event` dev dependency for interaction tests. Master Theorem included in catalog as [Open]. Complexity label rule: "avg" only for Bubble Sort and Quick Sort; "time" for all others.
 
 ---
 
