@@ -45,19 +45,19 @@ const PaperTrain: React.FC = () => (
 export const LearningPathStrip: React.FC = () => {
   return (
     <section className="relative w-full mb-6">
-      <div className="relative w-full bg-paper-map/90 rounded-sm shadow-paper overflow-hidden px-4 sm:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div className="relative w-full bg-[#eae2ce] rounded-sm shadow-[0_3px_8px_rgba(0,0,0,0.22)] border border-ink/10 overflow-hidden px-4 sm:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Soft Cartographic Underlay: river wash + park wash */}
-        <div className="absolute inset-0 pointer-events-none opacity-50 overflow-hidden" aria-hidden="true">
+        <div className="absolute inset-0 pointer-events-none opacity-75 overflow-hidden" aria-hidden="true">
           {/* Park watercolor wash patches */}
           <svg className="absolute -top-10 left-12 w-96 h-48" fill="none" viewBox="0 0 300 150">
-            <path d="M10 60 C 60 10, 140 20, 200 60 C 260 100, 280 140, 220 145 C 160 150, 40 130, 10 60 Z" fill="#d8e8dc" />
+            <path d="M10 60 C 60 10, 140 20, 200 60 C 260 100, 280 140, 220 145 C 160 150, 40 130, 10 60 Z" fill="#c2decb" />
           </svg>
           <svg className="absolute -bottom-10 right-48 w-80 h-44" fill="none" viewBox="0 0 300 150">
-            <path d="M30 40 C 90 20, 180 30, 250 80 C 230 130, 120 140, 50 110 Z" fill="#d8e8dc" />
+            <path d="M30 40 C 90 20, 180 30, 250 80 C 230 130, 120 140, 50 110 Z" fill="#c2decb" />
           </svg>
           {/* Pale blue meandering river */}
           <svg className="absolute inset-0 w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1000 120">
-            <path d="M -20 70 Q 250 110, 480 50 T 1020 75" fill="none" stroke="#bcdbe8" strokeLinecap="round" strokeWidth="26" />
+            <path d="M -20 70 Q 250 110, 480 50 T 1020 75" fill="none" stroke="#a7cee0" strokeLinecap="round" strokeWidth="26" />
           </svg>
         </div>
 
@@ -139,11 +139,11 @@ export const LearningPathStrip: React.FC = () => {
           >
             {/* Punch notches */}
             <span
-              className="absolute -left-1.5 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-paper-map"
+              className="absolute -left-1.5 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#eae2ce]"
               aria-hidden="true"
             />
             <span
-              className="absolute -right-1.5 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-paper-map"
+              className="absolute -right-1.5 top-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-[#eae2ce]"
               aria-hidden="true"
             />
             <span>{t('lessons.continue')}</span>
