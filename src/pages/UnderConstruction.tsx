@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { t } from '@/i18n';
-import { CuttingMat, RailFooter } from '@/components/desk';
+import { CuttingMat, RailFooter } from '@/components/home';
 import {
   BufferStop,
   RailBarrier,
